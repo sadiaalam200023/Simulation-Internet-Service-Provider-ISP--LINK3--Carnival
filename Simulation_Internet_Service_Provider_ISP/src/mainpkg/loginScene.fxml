@@ -20,5 +20,11 @@
       <Button layoutX="234.0" layoutY="337.0" mnemonicParsing="false" onAction="#singInButtonOnClicked" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: transparent;" textFill="#f5eded" />
       <Button layoutX="44.0" layoutY="337.0" mnemonicParsing="false" onAction="#forgetPasswordButtonOnClicked" prefHeight="3.0" prefWidth="108.0" style="-fx-background-color: transparent;" textFill="#f8f5f5" />
       <ComboBox fx:id="selectUserComboBox" layoutX="44.0" layoutY="300.0" prefHeight="31.0" prefWidth="256.0" promptText="                  Select User" style="-fx-background-color: transparent;" />
+      <ImageView fitHeight="31.0" fitWidth="75.0" layoutX="47.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@signup.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="47.0" layoutY="367.0" mnemonicParsing="false" onAction="#signupButtonOnClicked" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: transparent;" />
    </children>
 </AnchorPane>

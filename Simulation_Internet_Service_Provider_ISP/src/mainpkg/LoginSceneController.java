@@ -41,6 +41,11 @@ public class LoginSceneController implements Initializable {
 
     @FXML
     private void forgetPasswordButtonOnClicked(ActionEvent event) {
+        System.out.println("Forget Password");
+    }
+
+    @FXML
+    private void signupButtonOnClicked(ActionEvent event) {
     }
     
 }
