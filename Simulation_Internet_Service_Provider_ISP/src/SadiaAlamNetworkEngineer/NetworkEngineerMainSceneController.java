@@ -11,7 +11,7 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author HP
+ * @author dell
  */
 public class NetworkEngineerMainSceneController implements Initializable {
 

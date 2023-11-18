@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SadiaAlamTechnicalOfficer.TechnicalOfficerMainSceneController">
-    
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SadiaAlamTechnicalOfficer.TechnicalOfficerMainSceneController">
+   <children>
+      <TabPane prefHeight="406.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Notifications">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="6.0" layoutY="1.0" prefHeight="369.0" prefWidth="409.0">
+                           <columns>
+                              <TableColumn prefWidth="283.0" text="Notification Alert" />
+                              <TableColumn minWidth="0.0" prefWidth="132.0" text="Time" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="421.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Delete" />
+                        <Button layoutX="421.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="View" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Activities">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="listofTasksAppointmentsTableview" layoutX="8.0" layoutY="7.0" prefHeight="327.0" prefWidth="418.0">
+                           <columns>
+                              <TableColumn fx:id="listofTasksAppointmentscolom" prefWidth="417.0" text="List of Tasks and Appointments" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="14.0" layoutY="338.0" mnemonicParsing="false" onAction="#deletefromListonselection" text="Delete selected from List" />
+                        <Button layoutX="432.0" layoutY="69.0" mnemonicParsing="false" onAction="#viewInventoryoncickfieldtech" text="View Inventory" />
+                        <Button layoutX="432.0" layoutY="115.0" mnemonicParsing="false" onAction="#viewManualistonclick" text="View Manual List" />
+                        <Button layoutX="432.0" layoutY="160.0" mnemonicParsing="false" onAction="#generateFieldreportonclick" text="Generate Field Report" />
+                        <Button layoutX="432.0" layoutY="204.0" mnemonicParsing="false" onAction="#updateMaintenanceonClick" prefHeight="25.0" prefWidth="162.0" text="Maintenance Record Book" wrapText="true" />
+                        <Button layoutX="432.0" layoutY="248.0" mnemonicParsing="false" onAction="#makeAppointmentonclick" text="Make new appointment" />
+                        <Button layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onAction="#makenewTaskticket" text="Make new Task Ticket" />
+                        <Button layoutX="169.0" layoutY="338.0" mnemonicParsing="false" onAction="#viewselected" text="View selected Task" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>
